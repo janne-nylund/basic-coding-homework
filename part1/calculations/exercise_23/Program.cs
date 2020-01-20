@@ -14,8 +14,8 @@ namespace exercise_23
       Console.WriteLine("Give the second number!");
       string secondInput = Console.ReadLine();
 
-      double firstInt = Convert.ToInt32(firstInput);
-      double secondInt = Convert.ToInt32(secondInput);
+      double firstInt = Convert.ToDouble(firstInput);
+      double secondInt = Convert.ToDouble(secondInput);
 
       Console.WriteLine(firstInt + " + " + secondInt + " = " + (firstInt + secondInt));
       Console.WriteLine(firstInt + " - " + secondInt + " = " + (firstInt - secondInt));
