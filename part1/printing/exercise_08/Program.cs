@@ -8,6 +8,11 @@ namespace exercise_08
         {
             // Write your code here:
 
+            Console.WriteLine("What is your name?");
+
+            string userName = Console.ReadLine();
+
+            Console.WriteLine("Hello " + userName + "!");
         }
     }
 }
