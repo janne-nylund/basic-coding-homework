@@ -17,7 +17,9 @@ namespace exercise_21
       int firstInt = Convert.ToInt32(firstInput);
       int secondInt = Convert.ToInt32(secondInput);
 
-      Console.WriteLine("The average is " + ((firstInt + secondInt) / 2.0));
+      double average = (firstInt + secondInt) / 2.0;
+
+      Console.WriteLine("The average is " + average);
 
     }
   }
