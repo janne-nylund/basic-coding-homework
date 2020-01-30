@@ -13,11 +13,10 @@ namespace exercise_52
     // Write your method here:
     public static void PrintFromNumberToOne(int number)
     {
-      int i = number;
-      while (i > 0) 
+      while (number > 0) 
       {
-      Console.WriteLine(i);
-      i--;
+      Console.WriteLine(number);
+      number--;
       }
     }
   }
