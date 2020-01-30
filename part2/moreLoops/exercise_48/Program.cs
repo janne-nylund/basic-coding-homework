@@ -32,14 +32,11 @@ namespace exercise_48
       }
 
       double userAvg = (double)sum / counter;
-      string dotAvg = Convert.ToString(userAvg);
-      string converted = dotAvg.Replace(",", ".").Replace(".", ".");
-      // remember to change userAvg to converted in "Average: " + userAvg
 
       Console.WriteLine("Thx! Bye!");
       Console.WriteLine("Sum: " + sum);
       Console.WriteLine("Numbers: " + counter);
-      Console.WriteLine("Average: " + converted);
+      Console.WriteLine("Average: " + userAvg);
       Console.WriteLine("Even: " + countEven);
       Console.WriteLine("Odd: " + countOdd);
     }
