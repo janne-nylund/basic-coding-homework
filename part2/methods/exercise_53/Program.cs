@@ -14,7 +14,9 @@ namespace exercise_53
     public static void Division(int numerator, int denominator)
     {
       double divAnswer = (double)numerator / denominator;
-      Console.WriteLine(divAnswer);
+      string dotAnswer = Convert.ToString(divAnswer);
+      string converted = dotAnswer.Replace(",", ".").Replace(".", ".");
+      Console.WriteLine(converted);
     }
   }
 }
