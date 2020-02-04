@@ -8,7 +8,7 @@ namespace exercise_61
     {
       //PrintSpaces(4);
       //PrintStars(4);
-      //PrintRightTriangle(4);
+      PrintRightTriangle(4);
       ChristmasTree(10);
     }
 
