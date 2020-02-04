@@ -12,18 +12,18 @@ namespace exercise_61
       ChristmasTree(10);
     }
 
-    public static void PrintStars(int stars)
+    public static void PrintStars(int number)
     {
-      for (int i = 0; i < stars; i++)
+      for (int i = 0; i < number; i++)
       {
         Console.Write("*");
       }
       Console.WriteLine("");
     }
 
-    public static void PrintSpaces(int spaces)
+    public static void PrintSpaces(int number)
     {
-      for (int i = 0; i < spaces; i++)
+      for (int i = 0; i < number; i++)
       {
         Console.Write(" ");
       }
@@ -40,18 +40,18 @@ namespace exercise_61
       }
     }
 
-    public static void ChristmasTree(int size)
+    public static void ChristmasTree(int height)
     {
-      int sizeLeft = size - 1;
+      int sizeLeft = height - 1;
       int rowStars = 1;
-      for (int i = 1; i <= size; i++)
+      for (int i = 1; i <= height; i++)
       {
         PrintSpaces(sizeLeft);
         PrintStars(rowStars);
         sizeLeft--;
         rowStars += 2;
       }
-      int footSpaces = size - 2;
+      int footSpaces = height - 2;
       for (int x = 0; x < 2; x++)
       {
         PrintSpaces(footSpaces);
