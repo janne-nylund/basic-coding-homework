@@ -21,7 +21,7 @@ namespace exercise_79
             Console.WriteLine("Search for?");
             int searching = Convert.ToInt32(Console.ReadLine());
 
-            int found = 0;
+            int found = -1;
             // Implement the search functionality here
             for (int i = 0; i < array.Length; i++)
             {
@@ -31,7 +31,7 @@ namespace exercise_79
                 }
             }
 
-            if (found > 0)
+            if (found >= 0)
             {
                 Console.WriteLine(searching + " is at index " + found + ".");
             }
