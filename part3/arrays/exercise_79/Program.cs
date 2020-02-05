@@ -27,18 +27,18 @@ namespace exercise_79
             {
                 if (searching == array[i])
                 {
-                  found = i;
+                    found = i;
                 }
             }
 
             if (found > 0)
-                {
-                  Console.WriteLine(searching + " is at index " + found + ".");
-                }
-                else
-                {
-                  Console.WriteLine(searching + " was not found.");
-                }
+            {
+                Console.WriteLine(searching + " is at index " + found + ".");
+            }
+            else
+            {
+                Console.WriteLine(searching + " was not found.");
+            }
         }
 
     }
