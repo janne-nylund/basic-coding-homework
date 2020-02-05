@@ -8,19 +8,19 @@ namespace exercise_80
         public static void Main(string[] args)
         {
             int[] numbers = { 5, 1, 3, 4, 2 };
-            int sum = SumOfNumbersInArray(numbers);
-            Console.WriteLine(sum);
+            int sumOfArray = SumOfNumbersInArray(numbers);
+            Console.WriteLine(sumOfArray);
 
         }
 
         public static int SumOfNumbersInArray(int[] numbers)
         {
-            int sum = 0;
+            int sumOfArray = 0;
             for (int i = 0; i < numbers.Length; i++)
             {
-                sum += numbers[i];
+                sumOfArray += numbers[i];
             }
-            return sum;
+            return sumOfArray;
         }
 
     }
