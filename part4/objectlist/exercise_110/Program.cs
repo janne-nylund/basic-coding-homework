@@ -8,7 +8,7 @@ namespace exercise_110
         public static void Main(string[] args)
         {
             // IMPLEMENT YOUR CODE IN HERE!
-            List<Item> names = new List<Item>();
+            List<Item> items = new List<Item>();
 
 
             while (true)
@@ -20,17 +20,13 @@ namespace exercise_110
                     break;
                 }
 
-                names.Add(new Item(name));
+                items.Add(new Item(name));
             }
-
-            foreach (Item name in names)
+            Console.WriteLine();
+            foreach (Item name in items)
             {
                 Console.WriteLine(name);
             }
         }
     }
 }
-
-
-
-
