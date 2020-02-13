@@ -20,9 +20,6 @@ namespace exercise_110
                     break;
                 }
 
-
-                // Add to the list a new person
-                // whose name is the previous user input
                 names.Add(new Item(name));
             }
 
