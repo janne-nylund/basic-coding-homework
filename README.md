@@ -2732,6 +2732,8 @@ Write a program that reads names of items from the user. If the name is empty, t
 
 Having read all the names, print all the items by using the ToString method of the Item class. The implementation of the Item class keeps track of the time of creation, in addition to the name of the item.
 
+NOTICE! The list has to be called "items" for the tests to work!
+
 Example print:
 ```console
 Name: Hammer
@@ -2851,7 +2853,7 @@ Pages: 662
 Publication year: 2007 
 Title:
 
-What information will be printed? name 
+What information will be printed? title 
 To Kill a Mockingbird 
 A Brief History of Time 
 Beautiful Code 
@@ -2971,6 +2973,8 @@ Thank you!
 ```
 
 NOTICE! The exercise template comes with two files, names.txt and other-names.txt, which have the following contents. Do not change the contents of the files!
+
+NOTICE2! The exercise expects you to have a **string names** where you store the file!
 
 names.txt:
 
