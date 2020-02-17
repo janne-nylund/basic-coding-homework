@@ -13,6 +13,8 @@ namespace exercise_123
       Console.WriteLine(counter.value);
       counter.Increase(9);
       Console.WriteLine(counter.value);
+      counter.Increase(-9);
+      Console.WriteLine(counter.value);
       counter.Decrease();
       Console.WriteLine(counter.value);
       counter.Decrease(5);
