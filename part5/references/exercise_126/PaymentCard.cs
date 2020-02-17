@@ -21,6 +21,7 @@ namespace exercise_126
       // returns true if successful and false otherwise
       if (this.balance >= amount)
       {
+        this.balance = this.balance - amount;
         return true;
       }
 

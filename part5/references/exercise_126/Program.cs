@@ -7,23 +7,16 @@ namespace exercise_126
         public static void Main(string[] args)
         {
             // Try your code here, if you want
-
             PaymentTerminal lunchCafeteria = new PaymentTerminal();
-            Console.WriteLine(lunchCafeteria);
 
-            PaymentCard annesCard = new PaymentCard(2);
+            double change = lunchCafeteria.DrinkCoffee(10);
+            Console.WriteLine("remaining change " + change);
 
-            Console.WriteLine("amount of money on the card is " + annesCard.balance + " euros");
+            change = lunchCafeteria.DrinkCoffee(5);
+            Console.WriteLine("remaining change " + change);
 
-            bool wasSuccessful = lunchCafeteria.EatLunch(annesCard);
-            Console.WriteLine("there was enough money: " + wasSuccessful);
-
-            lunchCafeteria.AddMoneyToCard(annesCard, 100);
-
-            wasSuccessful = lunchCafeteria.EatLunch(annesCard);
-            Console.WriteLine("there was enough money: " + wasSuccessful);
-
-            Console.WriteLine("amount of money on the card is " + annesCard.balance + " euros");
+            change = lunchCafeteria.EatLunch(20);
+            Console.WriteLine("remaining change " + change);
 
             Console.WriteLine(lunchCafeteria);
         }
