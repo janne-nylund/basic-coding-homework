@@ -13,7 +13,7 @@ namespace exercise_125
         public int Weigh(Person person)
         {
             // incrase weighings
-            this.weighings = this.weighings + 1;
+            this.weighings++;
             // return the weight of the person passed as the parameter
             return person.weight;
         }
