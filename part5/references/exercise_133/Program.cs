@@ -7,32 +7,18 @@ namespace exercise_133
   {
     public static void Main(string[] args)
     {
-      Money money = new Money(100, 00);
-      Money moreMoney = new Money(500, 50);
+      Money money = new Money(100, 11);
+      Money moreMoney = new Money(30, 11);
 
       Money combined = money.Plus(moreMoney);
+      Money subtracted = money.Minus(moreMoney);
 
       Console.WriteLine(money);
       Console.WriteLine(moreMoney);
       Console.WriteLine(combined);
+      Console.WriteLine(subtracted);
 
-      Money lessMoney = moreMoney.Minus(money);
-
-      Console.WriteLine(money);
-      Console.WriteLine(moreMoney);
-      Console.WriteLine(lessMoney);
-
-      lessMoney = lessMoney.Minus(money);
-
-      Console.WriteLine(money);
-      Console.WriteLine(moreMoney);
-      Console.WriteLine(lessMoney);
-
-      Console.WriteLine(lessMoney.LessThan(moreMoney));
-      Console.WriteLine(lessMoney.LessThan(money));
-
-      lessMoney = lessMoney.Minus(moreMoney);
-      Console.WriteLine(lessMoney);
+      Console.WriteLine(money.LessThan(moreMoney));
     }
   }
 }
