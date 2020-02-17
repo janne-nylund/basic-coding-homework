@@ -9,7 +9,7 @@ namespace exercise_120
     {
       this.edgeLength = edgeLength;
       // here to pass faulty test, should be = 0;
-      this.volume = this.edgeLength * this.edgeLength * this.edgeLength;
+      this.volume = 0;
     }
 
     public int Volume()
@@ -19,7 +19,7 @@ namespace exercise_120
 
     public override string ToString()
     {
-      return "The length of the edge is " + this.edgeLength + " and the volume "+ this.volume;
+      return "The length of the edge is " + this.edgeLength + " and the volume "+ this.Volume();
     }
   }
 }
