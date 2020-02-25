@@ -23,14 +23,12 @@ namespace exercise_133
             // create a new Money object that has the correct worth
             Money newMoney = new Money(this.euros, this.cents);
             newMoney.euros += addition.euros;
-            if (newMoney.cents + addition.cents > 100)
+            newMoney.cents += addition.cents;
+            if (newMoney.cents > 100)
             {
-                newMoney.cents = (newMoney.cents + addition.cents) - 100;
+                // If the value of cents is greater than 100, substract 100 cents and increase euros by 1
+                newMoney.cents = newMoney.cents - 100;
                 newMoney.euros++;
-            }
-            else
-            {
-              newMoney.cents += addition.cents;
             }
             // return the new Money object
             return newMoney;
@@ -40,23 +38,19 @@ namespace exercise_133
         {
             Money newMoney = new Money(this.euros, this.cents);
             // create a new Money object that has the correct worth
-
-            if (newMoney.cents - decreaser.cents < 0)
+            newMoney.euros -= decreaser.euros;
+            newMoney.cents -= decreaser.cents;
+            if (newMoney.cents < 0)
             {
-                newMoney.cents = 100 - (decreaser.cents - newMoney.cents);
+                // Add the negative cents to 100, e.g. 100 + (-10) = 90
+                newMoney.cents = 100 + newMoney.cents;
                 newMoney.euros--;
-                newMoney.euros -= decreaser.euros;
-            }
-            else
-            {
-                newMoney.cents -= decreaser.cents;
-                newMoney.euros -= decreaser.euros;
             }
 
             if (newMoney.euros < 0)
             {
-                newMoney.euros = 0;
-                newMoney.cents = 0;
+                // Set the value of euros & cents to 0
+                newMoney.euros = newMoney.cents = 0;
             }
             // return the new Money object
             return newMoney;
