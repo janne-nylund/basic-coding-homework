@@ -70,9 +70,7 @@ namespace exercise_133
             {
                 return false;
             }
-
         }
-
         public override string ToString()
         {
             string zero = "";
