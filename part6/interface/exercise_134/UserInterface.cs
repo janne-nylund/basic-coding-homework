@@ -50,7 +50,7 @@ namespace exercise_134
 
         grade = grade - 1;
       }
-      // Added these lines
+      // Print average of points & grades
       Console.WriteLine("The average of points: " + register.AverageOfPoints());
       Console.WriteLine("The average of grades: " + register.AverageOfGrades());
       
