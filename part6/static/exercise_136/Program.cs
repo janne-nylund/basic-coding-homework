@@ -20,15 +20,8 @@ namespace exercise_136
 
         public static void HowManyNames(Person person)
         {
-            string name = person.ToString();
-            string[] pieces = name.Split(" ");
-            int numberOfNames = 0;
-
-            for (int i = 0; i < pieces.Length; i++)
-            {
-                numberOfNames++;
-            }
-            Console.WriteLine(person.ToString() + " has " + numberOfNames + " names.");
+            string[] pieces = person.ToString().Split(" ");
+            Console.WriteLine(person.ToString() + " has " + pieces.Length + " names.");
         }
     }
 }
