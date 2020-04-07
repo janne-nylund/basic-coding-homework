@@ -4618,7 +4618,99 @@ rollerblades
 a14
 g63
 ```
+<<<<<<< HEAD
 =======
 # noahs-ark
 CI pipeline exercise. Group work for Centrias Road to Software Engineering 2020. Using example files from the well known pets exercise.
 >>>>>>> a50894efa153afe39f7ac81e22df2f45f084c1d9
+=======
+
+# Part 9
+
+#### Exercise_148
+
+Create the following three classes:
+
+* Class A. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void A()**, which prints a string "A".
+* Class B. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void B()**, which prints a string "B".
+* Class C. Class should have no object variables nor should you specify a constructor for it. It only has the method **public void C()**, which prints a string "C".
+* After you have created the classes, **modify them** so that class B inherits class A, and class C inherits class B. In other words, class A will be a base class for class B, and class B will be a base class for class C.
+
+```cs
+A a = new A();
+B b = new B();
+C c = new C();
+
+a.APrint();
+b.BPrint();
+c.CPrint();
+
+Console.WriteLine();
+
+c.APrint();
+c.BPrint();
+c.CPrint();
+```
+
+```console
+A
+B
+C
+
+A
+B
+C
+```
+
+#### Exercise_149
+
+Create a class **Person**. The class must work as follows:
+
+```cs
+Person ada = new Person("Ada Lovelace", "24 Maddox St. London W1S 2QN");
+Person esko = new Person("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki");
+Console.WriteLine(ada);
+Console.WriteLine(esko);
+```
+
+```console
+Ada Lovelace, 24 Maddox St. London W1S 2QN
+Esko Ukkonen, Mannerheimintie 15 00100 Helsinki
+```
+
+Create a class **Student**, which inherits the class Person.
+
+At creation, student has 0 study credits. Every time a student studies, amount of study credits goes up. Class must act as follows:
+
+```cs
+Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
+Console.WriteLine(ollie);
+ollie.Study();
+Console.WriteLine(ollie);
+```
+
+```console
+Ollie, 6381 Hollywood Blvd. Los Angeles 90028 credits: 0
+Ollie, 6381 Hollywood Blvd. Los Angeles 90028 credits: 1
+```
+
+Create a class **Teacher**, which inherits the class Person.
+
+The class must act as follows:
+
+```cs
+Teacher ada = new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200);
+Teacher esko = new Teacher("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki", 5400);
+Console.WriteLine(ada);
+Console.WriteLine(esko);
+```
+
+```console
+Ada Lovelace, 24 Maddox St. London W1S 2QN salary 1200 per month
+Esko Ukkonen, Mannerheimintie 15 00100 Helsinki salary 5400 per month
+```
+
+NOTICE! You have to override the ToString.
+
+HINT! For Student and Teacher, use **base.ToString()** as a starting point.
+>>>>>>> 235c16ddcbe294fc30a1ec188022dedebcb86a88
