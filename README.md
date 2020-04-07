@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Where to begin
 
 Before you do this course, it is advised to do the course for command line and version control first: https://centria.github.io/console/. This gives you tools to learn how to create your own Git repository and how to use it.
@@ -4617,3 +4618,7 @@ rollerblades
 a14
 g63
 ```
+=======
+# noahs-ark
+CI pipeline exercise. Group work for Centrias Road to Software Engineering 2020. Using example files from the well known pets exercise.
+>>>>>>> a50894efa153afe39f7ac81e22df2f45f084c1d9
