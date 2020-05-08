@@ -33,7 +33,7 @@ namespace Exercise
             }
             else
             {
-                return "License plate could not be found in the registry!";
+                return "License plate Not found in registry!";
             }
         }
 
@@ -60,15 +60,15 @@ namespace Exercise
 
         public void PrintOwners()
         {
-            List<string> alreadyPrinted = new List<string>();
+            List<string> already = new List<string>();
 
             foreach (KeyValuePair<LicensePlate, string> item in this.owners)
             {
-                if (!alreadyPrinted.Contains(item.Value))
+                if (!already.Contains(item.Value))
                 {
                     Console.WriteLine(item.Value);
                 }
-                alreadyPrinted.Add(item.Value);
+                already.Add(item.Value);
             }
         }
     }

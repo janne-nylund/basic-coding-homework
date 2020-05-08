@@ -13,7 +13,6 @@ namespace Exercise
       this.country = country;
     }
 
-
     public override string ToString()
     {
       return country + " " + liNumber;
