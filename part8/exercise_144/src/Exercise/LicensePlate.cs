@@ -1,3 +1,5 @@
+using System;
+
 namespace Exercise
 {
   public class LicensePlate
@@ -19,12 +21,23 @@ namespace Exercise
 
     public override bool Equals(object compared)
     {
-      return false;
+      if (this == compared)
+            {
+                return true;
+            }
+
+
+            if ((compared == null) || !this.GetType().Equals(compared.GetType()))
+            {
+                return false;
+            }
+            LicensePlate comparedPlate = (LicensePlate)compared;
+            return this.liNumber == comparedPlate.liNumber && this.country == comparedPlate.country;
     }
 
     public override int GetHashCode()
     {
-      return -1;
+      return HashCode.Combine(this.liNumber, this.country);
     }
   }
 }
