@@ -1,19 +1,34 @@
+using System.Collections.Generic;
+
 namespace Exercise
 {
   public class OneItemBox : Box
-  {
-    public OneItemBox()
     {
-    }
+        private List<Item> list;
 
-    public override void Add(Item item)
-    {
-    }
+        public OneItemBox()
+        {
+            this.list = new List<Item>();
+        }
 
+        public override void Add(Item item)
+        {
+            if (list.Count == 0)
+            {
+                list.Add(item);
+            }
+        }
 
-    public override bool IsInBox(Item item)
-    {
-      return false;
+        public override bool IsInBox(Item item)
+        {
+            if (list.Contains(item))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
-  }
 }

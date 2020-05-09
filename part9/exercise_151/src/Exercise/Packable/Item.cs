@@ -1,6 +1,8 @@
+using System;
+
 namespace Exercise
 {
-  using System;
+ 
   public class Item
   {
 
