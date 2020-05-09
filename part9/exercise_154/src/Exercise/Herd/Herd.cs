@@ -11,9 +11,9 @@ namespace Exercise
             this.movableList = new List<IMovable>();
         }
 
-        public void AddToHerd(IMovable m)
+        public void AddToHerd(IMovable mov)
         {
-            this.movableList.Add(m);
+            this.movableList.Add(mov);
         }
 
         public void Move(int dx, int dy)
