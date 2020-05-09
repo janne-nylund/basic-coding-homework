@@ -9,8 +9,8 @@ namespace Exercise
     public static void Main(string[] args)
     {
       List<Human> humans = new List<Human>();
-      humans.Add(new Human("Merja", 500));
-      humans.Add(new Human("Pertti", 80));
+      humans.Add(new Human("Merja", 501));
+      humans.Add(new Human("Pertti", 499));
       humans.Add(new Human("Matti", 150000));
 
       // Sorts the list when your ComparedTo works

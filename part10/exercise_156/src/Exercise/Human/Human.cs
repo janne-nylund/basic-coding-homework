@@ -15,13 +15,9 @@ namespace Exercise
 
     public int CompareTo(Human another)
     {
-      // BEGIN SOLUTION
-      return 0;
-      // END SOLUTION
+      return another.wage - this.wage;
     }
     
-
-
     public override string ToString()
     {
       return name + " " + wage;
