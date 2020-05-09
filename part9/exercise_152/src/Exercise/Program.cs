@@ -17,9 +17,7 @@ namespace Exercise
       // Try to eat one too much
       trip.Eat();
       Console.WriteLine(trip.TacosRemaining());
-
       Console.WriteLine();
-
       CustomTacoBox custom = new CustomTacoBox(2);
       Console.WriteLine(custom.TacosRemaining());
       custom.Eat();
