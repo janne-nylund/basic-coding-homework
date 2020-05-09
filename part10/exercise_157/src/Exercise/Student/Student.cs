@@ -1,28 +1,25 @@
 namespace Exercise
 {
-  using System;
-  public class Student : IComparable<Student>
-  {
-
-    public string name { get; }
-
-    public Student(string name)
-    {
-      this.name = name;
-    }
-
-
-    public override string ToString()
-    {
-      return name;
-    }
-
-    //BEGIN SOLUTION
-    public int CompareTo(Student another)
+    using System;
+    public class Student : IComparable<Student>
     {
 
-      return 0;
+        public string name { get; }
+
+        public Student(string name)
+        {
+            this.name = name;
+        }
+
+
+        public override string ToString()
+        {
+            return this.name;
+        }
+
+        public int CompareTo(Student another)
+        {
+            return this.name.CompareTo(another.name);
+        }
     }
-    //END SOLUTION
-  }
 }
