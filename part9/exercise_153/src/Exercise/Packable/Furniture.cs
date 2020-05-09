@@ -1,20 +1,25 @@
 namespace Exercise
 {
-  public class Furniture : IPackable
-  {
-    public Furniture(string s, string s2, int i)
+    public class Furniture : IPackable
     {
+        private string type;
+        private string color;
+        private int weight;
+        public Furniture(string type, string color, int weight)
+        {
+            this.type = type;
+            this.color = color;
+            this.weight = weight;
+        }
 
-    }
+        public int Weight()
+        {
+            return this.weight;
+        }
 
-    public int Weight()
-    {
-      return 0;
+        public override string ToString()
+        {
+            return this.color + " " + this.type + " - weight " + this.weight + " kg";
+        }
     }
-
-    public override string ToString()
-    {
-      return "";
-    }
-  }
 }
