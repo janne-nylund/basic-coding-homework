@@ -1,3 +1,5 @@
+using System;
+
 namespace Exercise
 {
   public enum Suit
