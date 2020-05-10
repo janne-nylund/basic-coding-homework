@@ -16,7 +16,6 @@ namespace Exercise
         {
             return this.numbers;
         }
-
         public bool ContainsNumber(int number)
         {
             // Tests whether the number is already among the randomized numbers
@@ -26,7 +25,6 @@ namespace Exercise
             }
             return false;
         }
-
         public void RandomizeNumbers()
         {
             // initialize the list for numbers
