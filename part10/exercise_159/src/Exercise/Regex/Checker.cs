@@ -2,7 +2,6 @@ using System.Text.RegularExpressions;
 
 namespace Exercise
 {
-    using System.Text.RegularExpressions;
     public class Checker
     {
         public bool DayOfWeek(string str)
