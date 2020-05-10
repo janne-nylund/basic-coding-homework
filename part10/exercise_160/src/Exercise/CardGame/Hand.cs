@@ -38,13 +38,13 @@ namespace Exercise
             int sum = 0;
             foreach (Card item in this.hand)
             {
-                sum = sum + item.value;
+                sum += item.value;
             }
 
             int sumComp= 0;
             foreach (Card item in hand.hand)
             {
-                sumComp = sumComp + item.value;
+                sumComp += item.value;
             }
 
             return sum - sumComp;
