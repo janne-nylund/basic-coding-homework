@@ -1,28 +1,44 @@
+using System;
+
 namespace Exercise
 {
-  using System;
-  public class TemperatureSensor : Sensor
-  {
 
-    public bool IsOn()
+
+    public class TemperatureSensor : Sensor
     {
-      return false;
+        private Random rnd;
+        private Boolean onOff;
+        public TemperatureSensor()
+        {
+            this.rnd = new Random();
+            this.onOff = false;
+        }
+        public bool IsOn()
+        {
+            return this.onOff;
+        }
+
+
+        public void SetOn()
+        {
+          this.onOff = true;
+        }
+
+
+        public void SetOff()
+        {
+          this.onOff = false;
+        }
+
+
+        public int Read()
+        {
+          if (IsOn())
+          {
+            int temp = this.rnd.Next(-30, 30);
+            return temp;
+          }
+          throw new InvalidOperationException("Sensor not on!");
+        }
     }
-
-
-    public void SetOn()
-    {
-    }
-
-
-    public void SetOff()
-    {
-    }
-
-
-    public int Read()
-    {
-      return 0;
-    }
-  }
 }
